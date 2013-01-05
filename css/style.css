@@ -1,0 +1,7 @@
+.object {
+  -webkit-transition: all .5s linear;
+}
+
+.object:hover {
+  -webkit-transform: rotate(-40deg);
+}
