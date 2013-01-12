@@ -3,5 +3,22 @@
 }
 
 .object:hover {
-  -webkit-transform: rotate(-40deg);
+  -webkit-transform: rotate(-30deg);
+}
+
+#konewka {
+  position: absolute;
+  right: 0;
+  top: 25px;
+}
+
+#woda {
+  display: none;
+}
+
+#paper {
+  height: 800px;
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
 }
