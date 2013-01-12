@@ -6,6 +6,19 @@
   -webkit-transform: rotate(-30deg);
 }
 
+body {
+  background: red;
+}
+
+#paper {
+  height: 800px;
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+  top: 200px;
+  left: 100px;
+}
+
 #konewka {
   position: absolute;
   right: 0;
@@ -27,9 +40,11 @@
   right: 555px;
 }
 
-#paper {
-  height: 800px;
-  width: 800px;
-  margin: 0 auto;
-  position: relative;
+#kwiatek {
+  display: none;
+  position: absolute;
+  bottom: 675px;
+  right: 760px;
 }
+
+
