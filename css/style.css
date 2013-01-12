@@ -20,6 +20,13 @@
   right: 280px;
 }
 
+#dasein {
+  display: none;
+  position: absolute;
+  bottom: 275px;
+  right: 555px;
+}
+
 #paper {
   height: 800px;
   width: 800px;

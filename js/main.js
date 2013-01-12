@@ -4,6 +4,9 @@ $(document).ready( function() {
     setTimeout( function() {
       $("#woda").slideDown(1000, function(){
         $(this).css('display','block');
+        $("#dasein").slideDown(1000, function(){
+          $(this).css('display','block');
+        });
       });
     },1000);
   });
