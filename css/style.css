@@ -10,7 +10,7 @@ body {
   background: red;
 }
 
-#paper {
+.paper {
   height: 800px;
   width: 800px;
   margin: 0 auto;
@@ -19,28 +19,28 @@ body {
   left: 100px;
 }
 
-#konewka {
+.konewka {
   position: absolute;
   right: 0;
   top: 25px;
   cursor: pointer;
 }
 
-#woda {
+.woda {
   display: none;
   position: absolute;
   top: 200px;
   right: 280px;
 }
 
-#dasein {
+.dasein {
   display: none;
   position: absolute;
   bottom: 275px;
   right: 555px;
 }
 
-#kwiatek {
+.kwiatek {
   display: none;
   position: absolute;
   bottom: 675px;
