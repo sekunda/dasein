@@ -10,11 +10,31 @@ body {
   background: red;
 }
 
+#first {
+  -webkit-transform: scale(0.4);
+}
+
+#second {
+  -webkit-transform: scale(0.32);
+}
+
+#third {
+  -webkit-transform: scale(0.256);
+}
+
+#fourth {
+  -webkit-transform: scale(0.2048);
+}
+
+#fifth {
+  -webkit-transform: scale(0.16384);
+}
+
 .paper {
   height: 800px;
   width: 800px;
   margin: 0 auto;
-  position: relative;
+  position: fixed;
   top: 200px;
   left: 100px;
 }
