@@ -1,11 +1,12 @@
 $(document).ready( function() {
   $(".konewka").click(function() {
     $(this).addClass("rotate30");
+    var parent = $(this).parents('.paper');
     setTimeout( function() {
-      $(".woda").slideDown(1000, function(){
-        $(".dasein").slideDown(1000, function(){
-          $(".kwiatek").slideDown(1000, function(){
-            $(".fadebox").fadeOut("slow");
+      $(parent).find(".woda").slideDown(1000, function(){
+        $(parent).find(".dasein").slideDown(1000, function(){
+          $(parent).find(".kwiatek").slideDown(1000, function(){
+            $(parent).find(".fadebox").fadeOut("slow");
           });
         });
       });
