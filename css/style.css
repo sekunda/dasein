@@ -11,32 +11,29 @@ body {
 }
 
 #first {
-  -webkit-transform: scale(0.4);
+  -webkit-transform: translateX(400px) translateY(150px) scale(0.4);
 }
 
 #second {
-  -webkit-transform: scale(0.32);
+  -webkit-transform: translateX(30px) translateY(100px) scale(0.32);
 }
 
 #third {
-  -webkit-transform: scale(0.256);
+  -webkit-transform: translateX(400px) translateY(-150px) scale(0.256);
 }
 
 #fourth {
-  -webkit-transform: scale(0.2048);
+  -webkit-transform: translateX(200px) translateY(-250px) scale(0.2048);
 }
 
 #fifth {
-  -webkit-transform: scale(0.16384);
+  -webkit-transform: translate(-150px) translateY(-300px) scale(0.16384);
 }
 
 .paper {
   height: 800px;
   width: 800px;
-  margin: 0 auto;
   position: fixed;
-  top: 200px;
-  left: 100px;
 }
 
 .konewka {
