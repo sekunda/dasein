@@ -5,12 +5,12 @@
   };
 
   function initAnimation() {
-    createDasAni('a001',0.1,200,200);
-    createDasAni('a002',0.2,500,500);
-    createDasAni('a003',0.3,400,100);
-    createDasAni('a004',0.5,100,500);
-    createDasAni('a005',0.6,800,200);
-    createDasAni('a006',0.4,850,550);
+    createDasAni('a001', 0.1, 200, 200);
+    createDasAni('a002', 0.2, 500, 500);
+    createDasAni('a003', 0.3, 400, 100);
+    createDasAni('a004', 0.5, 100, 500);
+    createDasAni('a005', 0.6, 800, 200);
+    createDasAni('a006', 0.4, 850, 550);
   }
 
   DasAni = function(anId) {
@@ -92,15 +92,25 @@
     animationbody.appendChild(paper);
   }
 
+  function growMe(element,speed,callback) {
+    var w = element.css("width");
+    var h = element.css("height");
+    element.css({"width":"0","height":"0"});
+    element.css("display","block");
+    element.animate( { width: w, height: h}, speed, "swing", callback);
+
+  }
 
   document.body.addEventListener('click', function(ev) {
     var t = ev.target;
     if(t.classList[0] === 'konewka'){ //TODO: is this ok?
       $("#"+t.id).addClass("rotate30");
       setTimeout( function() {
-        $("#water"+t.id).slideDown(1000, function() {
-          $("#dasein"+t.id).slideDown(2000, function() {
-            $("#flower"+t.id).slideDown(1000, function() {
+        var woda = $("#water"+t.id);
+        growMe(woda, 4000, function() {
+          //woda.slideDown(1000, function() {
+          growMe( $("#dasein"+t.id), 2000, function() {
+            growMe( $("#flower"+t.id), 5000, function() {
               $("#fadebox"+t.id).fadeOut(3000, function() {
                 $("#flower"+t.id).addClass("object");
                 $("#flower"+t.id).addClass("rotate360");

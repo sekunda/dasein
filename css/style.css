@@ -23,6 +23,18 @@ body {
   background: red;
 }
 
+@font-face
+{
+  font-family: fontFromNet-BebasNeue;
+  src: url('../fonts/bebas/BebasNeue.otf');
+}
+
+.titles {
+  margin: 250px 0 0 250px;
+  font-size: 100pt;
+  font-family: fontFromNet-BebasNeue;
+}
+
 .paper {
   background: none;
   margin: 0 auto;
